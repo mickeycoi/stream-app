@@ -1,0 +1,60 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo-shop">
+          <img
+            src="https://store.cloudflare.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016"
+            alt="avtar"
+          />
+        </div>
+        <div class="nav-bar">
+          <a href="#">Store</a>
+          <a href="#">Community</a>
+          <a href="#">Support</a>
+        </div>
+      </div>
+      <div class="main">
+        <div class="search-tool">
+          <div class="search-container">
+            <div class="search-key">
+              <input
+                type="text"
+                id="search-game"
+                name="search-game"
+                placeholder="Search..."
+              />
+            </div>
+            <div class="icon-search">
+              <img
+                src="https://store.cloudflare.steamstatic.com/public/images/v6/search_icon_btn.png"
+                alt="icon-seacrh"
+                onclick="getAllGame()"
+              />
+            </div>
+          </div>
+          <div class="category-filter">
+            <h3>Category</h3>
+            <div id="category-game"></div>
+          </div>
+        </div>
+        <div class="list-game">
+          <div id="games"></div>
+
+          <div class="page-game">
+            <div id="backward" onclick="backward()"><< PREVIOUS PAGE</div>
+            <div id="forward" onclick="forward()">NEXT PAGE >></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background: rgba(42, 71, 94);
+  color: #c6d4df;
+  display: flex;
+  flex-wrap: wrap;
+}
+.header {
+  width: 100%;
+  background-color: #171a21;
+  padding: 20px 50px;
+  margin: 0px 0px 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header img {
+  max-width: 350px;
+  height: auto;
+}
+
+.main {
+  display: flex;
+}
+
+.search-tool {
+  max-width: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 5px;
+  margin: 10px 10px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.search-key input[type="text"] {
+  padding: 5px;
+  border: none;
+}
+
+.nav-bar > a {
+  text-decoration: none;
+  color: #f2ebf2;
+  font-size: 1.2rem;
+  margin-right: 15px;
+}
+
+.list-game {
+  width: 85%;
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tag-game {
+  max-width: 290px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  padding: 5px;
+}
+.tag-game img {
+  width: 100%;
+}
+
+.name-price-game {
+  display: flex;
+  justify-content: space-between;
+}
+
+#games {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.filterGame {
+  cursor: pointer;
+  text-transform: capitalize;
+  padding: 5px;
+  color: #66c0f4;
+}
+.filterGame:hover {
+  color: whitesmoke;
+}
+
+@media only screen and (max-width: 400px) {
+  .main {
+    flex-direction: column;
+  }
+  .category-filter {
+    display: none;
+  }
+  .search-tool {
+    padding: 0px;
+    margin: 0px;
+    justify-content: center;
+  }
+  .header {
+    flex-direction: column;
+  }
+
+  .header img {
+    width: 200px;
+    height: auto;
+  }
+
+  .tag-game {
+    margin: 5px;
+    padding: 5px;
+  }
+}
+.page-game {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#backward,
+#forward {
+  color: #66c0f4;
+  padding: 10px;
+  margin: 5px;
+}
+#backward:hover,
+#forward:hover {
+  color: whitesmoke;
+  cursor: pointer;
+}
